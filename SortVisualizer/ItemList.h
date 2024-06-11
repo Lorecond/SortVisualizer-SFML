@@ -19,7 +19,7 @@ public:
 	void visualizeSort();
 	void stop();
 
-	ItemList(sf::VideoMode vm, bool* shu, bool* sor, int t);
+	ItemList(sf::VideoMode vm, bool* shu, bool* sor, int time, int nItem);
 	~ItemList();
 private:
 	// Item List 

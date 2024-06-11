@@ -42,8 +42,8 @@ void ItemList::stop()
 }
 
 // ////////////////////////////////////////////////
-ItemList::ItemList(sf::VideoMode vm, bool* shu, bool* sor, int t)
-	: m_shuffle(&ItemList::shuffle, this), m_sort(&ItemList::sort, this), m_time(t)
+ItemList::ItemList(sf::VideoMode vm, bool* shu, bool* sor, int time, int nItem)
+	: m_shuffle(&ItemList::shuffle, this), m_sort(&ItemList::sort, this), m_time(time), m_nItem(nItem)
 {
 	/*
 		Initialize the variables and the threads
@@ -67,7 +67,6 @@ void ItemList::initList(sf::VideoMode vm)
 	/*
 		Initialize the list
 	*/
-	this->m_nItem = 200;
 
 	sf::Vector2f d;
 

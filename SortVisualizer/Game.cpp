@@ -122,7 +122,7 @@ void Game::initList()
 	/*
 		Initialize variables for list
 	*/
-	this->m_itemList = new ItemList(this->m_videoMode, &this->m_isShuffling, &this->m_isSorting, 10);
+	this->m_itemList = new ItemList(this->m_videoMode, &this->m_isShuffling, &this->m_isSorting, 10, 100);
 
 	this->m_isShuffling = false;
 	this->m_isSorting = false;
